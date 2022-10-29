@@ -1,0 +1,154 @@
+/*QUITANDO ALGUNOS ESTILOS POR DEFECTO*/
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif, Georgia;
+    font-size: 18px;
+}
+/*VARIABLES DE CSS*/
+:root{
+    --dark-color: rgb(31, 38, 51);
+    --grey-color: #2f3a8f;
+    --orange-color: #ff7433;
+    --ligth-color: #eeeeee;
+}
+/*EFECTO DE SCROLL*/
+html{
+    scroll-behavior: smooth;
+}
+/*ESTILOS AL BODY*/
+body{
+    background-color: var(--dark-color);
+    color: var(--ligth-color);
+}
+/*ESTILOS A LOS TEXTOS*/
+a{
+    text-decoration: none;
+}
+/*CAJA CON ENLACES NO VISIBLE*/
+.ul-container{
+    width: 8.5rem;
+    height: 10vh;
+    position: fixed;
+    transform: translateX(-100%) ;
+    z-index: 1000;
+    background-color: var(--orange-color);
+    text-align: center;
+    transition-duration: 0.5s;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    box-shadow: 2px 2px 5px #000;
+}
+/*CAJA CON ENLACES VISIBLES ACTIVO CON JAVASCRIPT*/
+.ul-container-active{
+    transform: translateX(0) ;
+    border-radius: 0 20px 20px 0;
+    height: 70vh;
+}
+/*ESTILOS PAGINA DE BIENVENIDA*/
+.main-section{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/*CAJA CONTENEDORA DE IMAGEN Y PRESENTACIÓN*/
+.presentation-section{
+    text-align: center;
+}
+/*ESTILOS PARA IMAGEN PERSONAL*/
+.me{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid var(--orange-color);
+}
+/*ESTILOS PARA PAGINA ABOUT*/
+#section-1{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+/*ESTILOS PARA TARJETAS OCULTAS DE ABOUT*/
+.welcome-section{
+    width: 80vw;
+    margin: 20px auto;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: var(--grey-color);
+    transform: translateX(-100%);
+    transition-duration: 1s;
+    display: flex;
+    justify-content: center;
+    opacity: 0;
+}
+/*ESTILOS ACTIVOS CON JS*/
+.welcome-section-observer{
+    transition-duration: 1s;
+    transform: translateX(0);
+    opacity: 1;
+}
+/*ESTILOS ACTIVOS CON JS PARA LOGOS, PAGINA WORK TOOLS*/
+.section-2__div{
+    background-color: var(--dark-color);
+}
+/*ESTILOS DE LOS LOGOS*/
+.dev-logo{
+    width: 100px;
+}
+/*ESTILOS PARA FOOTER*/
+.footer-section{
+    background-color: var(--orange-color);
+    height: 25vh;
+    display: flex;
+}
+.footer-section__ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+/*caja con circulos*/
+.div-container{
+    background-color: rgba(0, 0, 0, 0.3);
+    box-shadow: 3px 5px 10px #000;
+    height: 100vh;
+    width: 80vw;
+    margin: 5rem auto;
+    border-radius: 10px;
+    overflow: hidden;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+}
+.div-container__circles{
+    width: 100%;
+    height: 75vh;
+    background-color: rgb(0, 255, 255, 0.7);
+    filter: blur(150px);
+    position: relative;
+    right: 50vw;
+}
+.div-container__circles:last-child{
+    background-color: rgb(255, 0, 200,0.7);
+    position: relative;
+    left: 50vw;
+}
+.div-container__section{
+    width: 80%;
+    height: 6em;
+    background-color: rgb(121, 121, 121);
+    margin: 20px;
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+}
