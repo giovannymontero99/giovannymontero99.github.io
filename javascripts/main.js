@@ -12,5 +12,3 @@ interObserver('jsObserver', 'welcome-section-observer');
 interObserver('bootObserver', 'welcome-section-observer');
 interObserver('mysqlObserver', 'welcome-section-observer');
 interObserver('nodejsObserver', 'welcome-section-observer');
-
-

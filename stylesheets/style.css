@@ -106,17 +106,18 @@ a{
 .footer-section{
     background-color: var(--orange-color);
     height: 25vh;
-    display: flex;
+    
 }
-.footer-section__ul{
+.footer-section__ul {
     display: flex;
     list-style: none;
-    align-items: center;
+    height: 100%;
+    flex-wrap: wrap;
     justify-content: space-evenly;
-    width: 100%;
+    align-items: center;
 }
 
-/*caja con circulos*/
+/*ESTILO CAJA*/
 .div-container{
     background-color: rgba(0, 0, 0, 0.3);
     box-shadow: 3px 5px 10px #000;
@@ -145,10 +146,29 @@ a{
 }
 .div-container__section{
     width: 80%;
-    height: 6em;
+    height: 19em;
     background-color: rgb(121, 121, 121);
     margin: 20px;
     border-radius: 10px;
     position: absolute;
     left: 0;
 }
+.div-container__section-second{
+    width: 80%;
+    height: 30em;
+    background-color: rgb(150, 34, 34);
+    margin: 20px;
+    border-radius: 10px;
+    position: relative;
+    top: 20em;
+    left: 60px;
+}
+.img-cont{
+    display: flex;
+    justify-content: center;
+}
+.imgrara{
+    width: 90%;
+    text-align: center;
+}
+
