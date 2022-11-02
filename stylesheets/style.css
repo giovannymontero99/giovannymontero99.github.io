@@ -102,7 +102,36 @@ a{
 .dev-logo{
     width: 100px;
 }
+/*Estilos Boton hoja de vida*/
+
+.cv-content{
+    width: 80vw;
+    height: 40vh;
+    background-color: var(--dark-color);
+    box-shadow: 1px 2px 10px #000;
+    margin: 18em auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.cv-content__line{
+    display: flex;
+    align-items: center;
+    border: 2px solid var(--ligth-color);
+    height: 25%;
+    padding: 8px;
+    position: absolute;
+}
+.btn-hv{
+    background-color: transparent;
+    color: var(--ligth-color);
+    border: 2px solid var(--orange-color);
+    padding: 8px;
+    border-radius: 6px;
+    margin: 8px;
+}
 /*ESTILOS PARA FOOTER*/
+
 .footer-section{
     background-color: var(--orange-color);
     height: 16vh;
@@ -116,36 +145,3 @@ a{
     justify-content: space-evenly;
     align-items: center;
 }
-
-/*ESTILO CAJA*/
-
-.cv-content{
-    width: 80vw;
-    height: 40vh;
-    background-color: var(--dark-color);
-    box-shadow: 1px 2px 10px #000;
-    margin: 18em auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.cv-content__line{
-    display: flex;
-    align-items: center;
-    border: 2px solid var(--ligth-color);
-    height: 25%;
-    padding: 8px;
-    position: absolute;
-}
-/*Estilos Boton hoja de vida*/
-
-.btn-hv{
-    background-color: transparent;
-    color: var(--ligth-color);
-    border: 2px solid var(--orange-color);
-    padding: 8px;
-    border-radius: 6px;
-    margin: 8px;
-}
-
