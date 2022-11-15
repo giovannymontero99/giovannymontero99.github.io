@@ -130,6 +130,9 @@ a{
     border-radius: 6px;
     margin: 8px;
 }
+.circle-img{
+    display: none;
+}
 /*ESTILOS PARA FOOTER*/
 
 .footer-section{
@@ -190,7 +193,55 @@ a{
         align-items: center;
         justify-content: center;
     }
+    /*estilos tercera seccion*/
+
+    #section-3{
+        height: 80vh;
+    }
+    .cv-content{
+        background-color: var(--orange-color);
+        z-index: 100;
+        position: relative;
+        top: 5em;
+        height: 17vh;
+        width: 60%;
+    }
+    .cv-content__line{
+        background-color: var(--dark-color);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 30vw;
+        border: none;
+        border-radius: 20px;
+        height: 22vh;
+        box-shadow: 2px 2px 8px #000;
+    }
+    .btn-hv{
+        border: none;
+        background-color: var(--grey-color);
+    }
+    .btn-hv:hover{
+        transition: 0.5s;
+        background-color: var(--ligth-color);
+        color: var(--dark-color);
+        border: none;
+    }
+    .section-circle{
+        width: 100%;
+    }
+    .circle-img{
+        position: absolute;
+        left: 3em;
+        width: 90%;
+        height: 65vh;
+        z-index: 10;
+        display: block;  
+    }
+
+    /*estilos para pie de pagina*/
     .footer-section{
         height: 8vh;
-    }
+    }    
 }
