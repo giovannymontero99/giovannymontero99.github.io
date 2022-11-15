@@ -145,3 +145,52 @@ a{
     justify-content: space-evenly;
     align-items: center;
 }
+
+@media (min-width: 800px){
+    /*Eliminando boton hamburguesa y menu*/
+    #hamburger{
+        display: none;
+    }
+    #ulContainer{
+        display: none;
+    }
+
+    /*estilos para ABOUT*/
+    .welcome-section{
+        border-radius: 0;
+    }
+    /*Tamaño y posision de cada caja*/
+    #firstObserver{
+        margin-left: 3em;
+        width: 40vw;
+        height: 15vh;
+        align-items: center;
+    }
+    #secondObserver{
+        margin-right: 3em;
+        width: 60vw;
+        height: 40vh;
+        align-items: center;
+    }
+    #thirdObserver{
+        margin-left: 10em;
+        width: 40vw;
+        height: 20vh;
+        align-items: center;
+    }
+    /*estilos borde blanco desbordado*/
+    .line-box{
+        border: 2px solid var(--ligth-color);
+        width: 105%;
+        position: absolute;
+        padding: 1em;
+        height: 80%;
+        border-radius: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer-section{
+        height: 8vh;
+    }
+}
