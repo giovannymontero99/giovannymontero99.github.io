@@ -28,7 +28,7 @@ a{
 }
 /*CAJA CON ENLACES NO VISIBLE*/
 .ul-container{
-    width: 8.5rem;
+    width: 11rem;
     height: 10vh;
     position: fixed;
     transform: translateX(-100%) ;
@@ -41,6 +41,7 @@ a{
     flex-direction: column;
     justify-content: space-evenly;
     box-shadow: 2px 2px 5px #000;
+    list-style: none;
 }
 /*CAJA CON ENLACES VISIBLES ACTIVO CON JAVASCRIPT*/
 .ul-container-active{
@@ -113,22 +114,27 @@ a{
     display: flex;
     justify-content: center;
     align-items: center;
+    max-width: 500px;
 }
 .cv-content__line{
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 2px solid var(--ligth-color);
     height: 25%;
+    width: 95%;
     padding: 8px;
     position: absolute;
+    max-width: 600px;
 }
-.btn-hv{
+.cv-content__btn{
     background-color: transparent;
     color: var(--ligth-color);
     border: 2px solid var(--orange-color);
     padding: 8px;
     border-radius: 6px;
     margin: 8px;
+    cursor: pointer;
 }
 .circle-img{
     display: none;
@@ -199,49 +205,52 @@ a{
         height: 80vh;
     }
     .cv-content{
-        background-color: var(--orange-color);
-        z-index: 100;
-        position: relative;
-        top: 5em;
-        height: 17vh;
-        width: 60%;
+        width: 30vw;
     }
     .cv-content__line{
-        background-color: var(--dark-color);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-evenly;
-        width: 30vw;
-        border: none;
-        border-radius: 20px;
-        height: 22vh;
-        box-shadow: 2px 2px 8px #000;
-    }
-    .btn-hv{
-        border: none;
-        background-color: var(--grey-color);
-    }
-    .btn-hv:hover{
         transition: 0.5s;
-        background-color: var(--ligth-color);
-        color: var(--dark-color);
-        border: none;
+        width: 15em;
+        height: 15em;
+        padding: 0;
+        flex-direction: column;
+        border-radius: 20px 0 20px 0;
     }
-    .section-circle{
+    .cv-content__letter{
+        background-color: rgba(255, 255, 255, 0.2);
         width: 100%;
+        padding: 0;
+        margin: 0;
+        flex: 8;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 100;
+        border-radius: 20px 0 20px 20px;
+        box-shadow: 0 2px 5px #000;
     }
-    .circle-img{
-        position: absolute;
-        left: 3em;
-        width: 90%;
-        height: 65vh;
-        z-index: 10;
-        display: block;  
+    .cv-content__btn-container{
+        display: flex;
+        width: 100%;
+        position: relative;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center;
+        z-index: 50;
+        flex: 1;
+        transition-duration: 0.5s;
     }
+    .cv-content__btn{
+        background-color: var(--orange-color);
+    }
+    .cv-content__btn-container:hover{
+        transition-duration: 0.5s;
+        flex: 30;
+    }
+
+    
 
     /*estilos para pie de pagina*/
     .footer-section{
         height: 8vh;
-    }    
+    }
 }

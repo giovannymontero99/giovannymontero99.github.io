@@ -13,3 +13,13 @@ interObserver('bootObserver', 'welcome-section-observer');
 interObserver('mysqlObserver', 'welcome-section-observer');
 interObserver('nodejsObserver', 'welcome-section-observer');
 interObserver('gitObserver', 'welcome-section-observer');
+
+
+const cvContentLine = document.querySelector('.cv-content__line');
+
+
+
+/*document.addEventListener("mouseover", e=> {
+    if(e.target.className.match(/cv-content__/) !== null) return console.log()
+    return cvContentLine.innerHTML = 'Conoce sobre mi'
+})*/
